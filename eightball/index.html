@@ -7,6 +7,7 @@
             yo moma's  fatter than an 8ball
         </title>
         <style>
+
          body {
              font-family:cursive;
              font-size:large;
@@ -14,7 +15,7 @@
              color:white;   
              text-align: center;
          }
-        div {
+        div#question {
             background:brown;
             margin: 1em; /* one letter M */
             padding:1em;
@@ -22,15 +23,22 @@
             border-style:solid;
             display: inline-block;
             border-radius: 2em;
-        }            
+        }      
+        [contenteditable] {
+            outline: none;
+        }
+
         </style>
     </head>
     <body>
         <h1>yo momas fatter than an 8ball</h1>
         <p>call the fire department, you'll get roasted</p>
-       <div>your question here</div><br>
-        <div>your roast here</div>
-        <script src="main.js"></script>
+
+       <div contenteditable id=question></div><br>
+        
+       <div id=roast></div>
+       
+       <script src="main.js"></script>
     </body>
 </html>
 

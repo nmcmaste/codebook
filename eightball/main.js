@@ -12,8 +12,19 @@ function randRoast() {
     return gangstaRoasts[n]
 }
 
+let roast = document.querySelector('#roast')
+let question = document.querySelector('#question')
 
-console.log(gangstaRoasts)
+function updateRoast(event) {
+    if (event.key === "Enter") {
+        roast.innerText = randRoast()
+        question.innerText = ""
+        return false
+    }
+}
+
+question.onkeypress = updateRoast
+
 
 /*
 
